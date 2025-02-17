@@ -2,7 +2,7 @@
 
 /**
  * main - Yes
- * 
+ *
  * Return: No
  */
 int main(void)
