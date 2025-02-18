@@ -5,7 +5,8 @@
  *
  * Return: return
  */
-int main(void) {
+int main(void)
+{
 	char *string = "_putchar\n";
 
 	while(*string)
