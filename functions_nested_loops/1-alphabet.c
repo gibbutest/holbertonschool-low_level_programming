@@ -7,10 +7,12 @@
  */
 int main(void)
 {
-	char *string = "abcdefgihjklmnopqrstuvwxyz\n";
+	int c;
 
-	while (*string)
-		_putchar(*string++);
+  for (c = 'a'; c <= 'z'; c++)
+    _putchar(c);
+
+  _putchar('\n');
 
 	return (0);
 }
