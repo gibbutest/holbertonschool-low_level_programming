@@ -2,14 +2,11 @@
 
 /**
  * _islower - Is it lower? Like... Actually?
+ * @c: The char to be checked
+ * 
+ * Return: yes or no
  */
 int _islower(int c)
 {
-  if (c == 'c')
-  {
-    return (1); 
-  }
-  else {
-    return (0);
-  }
+  return (c >= 'a' && c <= 'z');
 }
