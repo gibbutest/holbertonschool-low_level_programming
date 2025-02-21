@@ -5,21 +5,22 @@
  */
 void times_table(void)
 {
-	int i;
 	int a;
+	int b;
 	int res;
 
-	for (i = 0; i < 10; i++)
+	for (a = 0; a < 10; a++)
 	{
-		for (a = 0; a < 10; a++)
+		for (b = 0; b < 10; b++)
 		{
-			res = a * 9;
-			if (res >= 10)
-				_putchar('0' + (res / 10));
+			res = a * 9; // 0-9-18-27...
 
-			_putchar('0' + (res % 10));
-			_putchar(',');
+			if (a == 0)
+				_putchar('0');
+
+			_putchar('0' + res / 10);
 			_putchar(' ');
+			_putchar(',');
 		}
 
 		_putchar('\n');
