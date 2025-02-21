@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_9_times_table - Wow?
+ * times_table - Wow?
  */
 void times_table(void)
 {
@@ -16,11 +16,13 @@ void times_table(void)
 			res = a * 9;
 
 			if (a == 0)
+			{
 				_putchar('0');
-
-			_putchar('0' + res / 10);
-			_putchar(' ');
-			_putchar(',');
+			}
+			else
+			{
+				_putchar('0' + res / 10);
+			}
 		}
 
 		_putchar('\n');
