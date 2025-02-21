@@ -3,7 +3,7 @@
 /**
  * print_9_times_table - Wow?
  */
-void print_9_times_table(void)
+void times_table(void)
 {
 	int i;
 	int res;
