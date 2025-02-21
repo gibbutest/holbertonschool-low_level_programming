@@ -18,10 +18,7 @@ void times_table(void)
 		{
 			res = a * 9;
 
-			if (res >= 10)
-				_putchar('0' + res / 10);
-	
-			_putchar('0' + res % 10 * b);
+			_putchar('0' + res % 10);
 
 			if (b < 9)
 			{
