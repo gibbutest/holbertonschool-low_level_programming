@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Main
+ * print_sign - Print the stuffs
  *
  * Return: return
  */
