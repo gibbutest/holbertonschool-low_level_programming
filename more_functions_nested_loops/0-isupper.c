@@ -6,7 +6,7 @@
  * 
  * Description: WHY?
  *
- *	Return: yes or no
+ * Return: yes or no
  */
 int _isupper(int c)
 {
