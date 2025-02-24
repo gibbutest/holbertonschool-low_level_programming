@@ -3,6 +3,8 @@
 /**
  * _issuper - The stuffs
  * @c: The letter
+ * 
+ * Description: WHY?
  *
  *	Return: yes or no
  */
