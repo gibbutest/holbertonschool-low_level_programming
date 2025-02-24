@@ -4,6 +4,7 @@
  * print_line - Print the line!
  *
  * Description: Prints a line?
+ * @n: The number of lines.
  */
 void print_line(int n)
 {
