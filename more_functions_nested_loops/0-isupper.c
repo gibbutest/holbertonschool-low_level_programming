@@ -2,10 +2,9 @@
 
 /**
  * _issuper - The stuffs
- * @c: The letter
- * 
- * Description: WHY?
  *
+ * Description: Why??????
+ * @c: The letter
  * Return: yes or no
  */
 int _isupper(int c)
