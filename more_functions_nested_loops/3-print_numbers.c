@@ -4,7 +4,7 @@
  * print_numbers - Print all the numbers
  *
  * Description: Why do we need a separate description?
- */ 
+ */
 void print_numbers(void)
 {
 	int i;
