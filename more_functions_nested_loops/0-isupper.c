@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _issuper - The stuffs
+ * _isupper - The stuffs
  *
  * Description: Why??????
  * @c: The letter
