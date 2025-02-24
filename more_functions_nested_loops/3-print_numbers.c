@@ -3,7 +3,7 @@
 /**
  * print_numbers - Print all the numbers
  *
- * Description: Why do we need a separate description if the stuff after the - is meant to be just that?
+ * Description: Why do we need a separate description?
  */ 
 void print_numbers(void)
 {
