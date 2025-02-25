@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_rev - sdrawkcaB
+ * rev_string - sdrawkcaB
  *
  * Description: Print it backwards.
  * @s: The string
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int i;
 	int length;
