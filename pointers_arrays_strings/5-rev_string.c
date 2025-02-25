@@ -17,7 +17,7 @@ void rev_string(char *s)
 	for (i = 0; s[i]; i++)
 		length++;
 
-	for (i = 0; i >= length / 2; i++)
+	for (i = 0; i < length / 2; i++)
 	{
 		tmp = s[i];
 		s[i] = s[i];
