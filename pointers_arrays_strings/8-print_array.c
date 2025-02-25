@@ -6,19 +6,21 @@
  *
  * Description: ALL OF THEM!
  * @a: The array
- * @n: The count?
+ * @n: The number of indexes to print.
  */
 void print_array(int *a, int n)
 {
 	int i;
 
-	for (i = 0; n > 1; i++)
+	for (i = 0; i + 1 > n; i++)
 	{
-		printf("%d, ", a[i]);
+		if (n > 1)
+			printf("%d, ", a[i]);
+		else
+			printf("%d", a[i]);
+
 		n--;
 	}
-	if (n == 1)
-		printf("%d", a[i]);
 
 	_putchar('\n');
 }
