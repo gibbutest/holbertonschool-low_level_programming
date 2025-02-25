@@ -5,6 +5,8 @@
  *
  * Description: yes
  * @s: the string
+ *
+ * Return: the count
  */
 int _strlen(char *s)
 {
