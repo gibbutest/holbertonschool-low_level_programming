@@ -13,7 +13,7 @@ void puts_half(char *str)
 	int half;
 
 	length = 0;
-	
+
 	for (i = 0;	str[i]; i++)
 		length++;
 
