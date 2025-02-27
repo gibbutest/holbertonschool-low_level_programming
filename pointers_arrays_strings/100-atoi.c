@@ -13,27 +13,23 @@ int _atoi(char *s)
 {
 	int sum = 0;
 	int sign = 1;
-	int i = 0;
-	int eval = 0;
 
-	while (s[i] != '\0')
+	while (*s && (*s < '0' || *s > '9'))
 	{
-		if (s[i] >= '0' && s[i] <= '9' && eval == 0)
-		{
-			sum = (sum * 10) + (s[i] - '0');
-		}
-		else {
-			if (eval == 1)
-				eval = 1;
-		}
-
-		if (s[i] == '-' && eval == 0)
-		{
+		if (*s == '-')
 			sign *= -1;
-		}
-
-		i++;
+		s++;
 	}
-	
+
+	while (*s && (*s >= '0' && *s <= '9'))
+	{
+		if (sum)
+			sum = (sum * 10) + ((*s - '0') * sign);
+		else
+			sum = (*s - '0') * sign;
+
+		s++;
+	}
+
 	return (sum * sign);
 }
