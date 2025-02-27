@@ -1,5 +1,14 @@
 #include "main.h"
 
+/**
+ * _strcat - Concat
+ *
+ * Description: Combine the two string.
+ * @dest: The original
+ * @src: The new
+ *
+ * Return: The combined
+ */
 char *_strcat(char *dest, char *src)
 {
 	int pos = 0;
