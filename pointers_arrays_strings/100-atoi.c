@@ -35,5 +35,5 @@ int _atoi(char *s)
 		i++;
 	}
 	
-	return (sign * sum);
+	return (sum * sign);
 }
