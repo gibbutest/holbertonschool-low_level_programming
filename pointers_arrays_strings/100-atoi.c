@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -10,29 +11,29 @@
  */
 int _atoi(char *s)
 {
-	int result = 0;
+	int sum = 0;
 	int sign = 1;
 	int i = 0;
-
-	while (s[i] == ' ' || s[i] == '-' || s[i] == '+')
-		i++;
-
-	if (s[i] == '-')
-	{
-		sign = -1;
-		i++;
-	}
-	else if (s[i] == '+')
-		i++;
+	int eval = 0;
 
 	while (s[i] != '\0')
 	{
-		if (s[i] < '0' || s[i] > '9')
-			break;
+		if (s[i] >= '0' && s[i] <= '9' && eval == 0)
+		{
+			sum = (sum * 10) + (s[i] - '0');
+		}
+		else {
+			if (eval == 1)
+				eval = 1;
+		}
 
-		result = result * 10 + (s[i] - '0');
+		if (s[i] == '-' && eval == 0)
+		{
+			sign *= -1;
+		}
+
 		i++;
 	}
-
-	return (sign * result);
+	
+	return (sign * sum);
 }
