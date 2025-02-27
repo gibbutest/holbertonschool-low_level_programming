@@ -20,7 +20,5 @@ char *_strncpy(char *dest, char *src, int n)
 		tmp[i] = src[i];
 	}
 
-	if ()
-
 	return (tmp);
 }
