@@ -1,17 +1,35 @@
 #include "main.h"
 
+/**
+ * _strncpy - Wowzers
+ *
+ * Description: Copyn't
+ * @dest: The original
+ * @src: The new
+ *
+ * Return: The replaced.
+ */
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i = 0;
 	char *tmp = dest;
 
-	for (; dest[i] && i < n; i++)
+	for (; *dest && i < n; i++)
 	{
-		if (src[i] != '\0')
-			tmp[i] = src[i];
+		if (*src)
+		{
+			*dest = *src;
+			src++;
+		}
 		else
-			dest[i] = '\0';
+		{
+			*dest = '\0';
+		}
+
+		dest++;
 	}
 
-	return (tmp);
+	dest = tmp;
+
+	return (dest);
 }
