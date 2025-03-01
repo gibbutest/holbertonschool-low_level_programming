@@ -6,6 +6,7 @@
  * Description: Copyn't
  * @dest: The original
  * @src: The new
+ * @n: The limit
  *
  * Return: The replaced.
  */
