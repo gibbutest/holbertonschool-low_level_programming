@@ -16,14 +16,18 @@ char *cap_string(char *s)
 		s[0] = s[0] - 32;
 
 	for (; s[i]; i++)
+	{
 		if (s[i] < 65 || s[i] > 122)
 		{
-			int next = s[i + 1];
-
-			if (next >= 'a' && next <= 'z')
-				if (next != '6' && next != '-')
-					next = next - 32;
+			if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+			{
+				if (s[i + 1] != '6' && s[i + 1] != '-')
+				{
+					s[i + 1] = s[i + 1] - 32;
+				}
+			}
 		}
+	}
 
 	return (s);
 }
