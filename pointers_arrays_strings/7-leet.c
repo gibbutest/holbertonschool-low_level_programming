@@ -13,7 +13,7 @@ char *leet(char *s)
 	int a;
 	int b;
 	char norms[10] = {"aAeEoOtTlL"};
-	char leet[10] = {"44330077lL"};
+	char leet[10] = {"4433007711"};
 
 	for (a = 0; s[a] != '\0'; a++)
 	{
