@@ -16,11 +16,9 @@ char *leet(char *s)
 	char leet[10] = {"4433007711"};
 
 	for (a = 0; s[a] != '\0'; a++)
-	{
 		for (b = 0; leet[b]; b++)
 			if (s[a] == norms[b])
 				s[a] = leet[b];
-	}
 
 	return (s);
 }
