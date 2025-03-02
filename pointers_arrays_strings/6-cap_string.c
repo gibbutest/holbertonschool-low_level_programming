@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * cap_string - Capitialize the strings
+ *
+ * Description: All The Strings MUST Be Capitialize
+ * @s: The string
+ *
+ * Return: The Capitialize String
+ */
 char *cap_string(char *s)
 {
 	int i = 0;
@@ -9,7 +17,7 @@ char *cap_string(char *s)
 
 	for (; s[i]; i++)
 		if (s[i] < 65 || s[i] > 122)
-			if (s[i + 1] >= 'a' && s[i + 1] < 'z')
+			if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
 				if (s[i + 1] != '6' && s[i] != '-')
 					s[i + 1] = s[i + 1] - 32;
 
