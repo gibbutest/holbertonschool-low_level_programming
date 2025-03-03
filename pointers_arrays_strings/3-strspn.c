@@ -15,14 +15,9 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int len = 0;
 
 	for (; *s != '\0'; s++)
-	{
-		for (i = 0; accept[i]; i++)
+		for (i = 0; accept[i] != '\0'; i++)
 			if (*s == accept[i])
-			{
-				break;
-			}
-			len++;
-	}
+				len++;
 
 	return (len);
 }
