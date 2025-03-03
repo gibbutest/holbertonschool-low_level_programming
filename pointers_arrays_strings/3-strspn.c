@@ -13,11 +13,25 @@ unsigned int _strspn(char *s, char *accept)
 {
 	int i;
 	unsigned int len = 0;
+	int found = 0;
 
 	for (; *s != '\0'; s++)
-		for (i = 0; accept[i] != '\0'; i++)
-			if (*s == accept[i] && ((*s >= 'a' && *s <= 'z') || (*s >= 'A' && *s <= 'Z')))
+	{
+		found = 0;
+
+		for (i = 0; accept[i]; i++)
+		{
+			if (*s == accept[i])
+			{
 				len++;
+				found = 1;
+				break;
+			}
+		}
+
+		if (found == 0)
+			return (len);
+	}
 
 	return (len);
 }
