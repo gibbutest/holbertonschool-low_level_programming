@@ -2,6 +2,8 @@
 
 /**
  * _print_chessboard - Print the board
+ *
+ * Description: Why does it need this?
  * @a: The board
  */
 void print_chessboard(char (*a)[8])
