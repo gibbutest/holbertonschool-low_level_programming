@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * _pow_recursion - POW AND THE DIRT IS GONE
+ * @x: x
+ * @y: y
+ *
+ * Return: Numbers
+ */
 int _pow_recursion(int x, int y)
 {
 	if (y == 0)
