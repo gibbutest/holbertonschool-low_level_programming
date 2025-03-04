@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * _print_chessboard - Print the board
- *
- * Description: Why does it need this?
+ * print_chessboard - Print the board
  * @a: The board
  */
 void print_chessboard(char (*a)[8])
