@@ -6,7 +6,7 @@
  * Description: Loop until found the lowest square root.
  * @n: The number
  * @base: The base case
- * 
+ *
  * Return: Numbers!
  */
 int get_square(int n, int base)
