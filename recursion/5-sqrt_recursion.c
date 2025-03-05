@@ -11,7 +11,13 @@
  */
 int get_square(int n, int base)
 {
-	return base * base > n ? (-1) : base * base == n ? base : get_square(n, base + 1);
+	return (
+		base * base > n ?
+			(-1) :
+			base * base == n ?
+				base :
+				get_square(n, base + 1)
+	);
 }
 
 /**
@@ -24,5 +30,5 @@ int get_square(int n, int base)
  */
 int _sqrt_recursion(int n)
 {
-	return n < 0 ? (-1) : get_square(n, 1);
+	return (n < 0 ? (-1) : get_square(n, 1));
 }
