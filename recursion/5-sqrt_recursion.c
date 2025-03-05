@@ -13,7 +13,7 @@ int get_square(int n, int base)
 {
 	return (
 		base * base > n ?
-			(-1) :
+			-1 :
 			base * base == n ?
 				base :
 				get_square(n, base + 1)
