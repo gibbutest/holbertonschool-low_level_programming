@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * sqrt - Skr skr
+ * get_square - Skr skr
  *
  * Description: Loop until found the lowest square root.
  * @n: The number
