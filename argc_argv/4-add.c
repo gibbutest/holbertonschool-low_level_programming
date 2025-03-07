@@ -18,7 +18,8 @@ int main(int argc, char *argv[])
 	{
 		if (strspn(argv[i], "1234567890") == strlen(argv[i]))
 			sum += atoi(argv[i]);
-		else {
+		else
+		{
 			printf("Error\n");
 			return (0);
 		}
