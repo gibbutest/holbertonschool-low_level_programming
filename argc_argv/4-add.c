@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - Run the code!
+ * @argc: The arg count
+ * @argv: The args
+ *
+ * Return: The sum of numbers or Error
+ */
 int main(int argc, char *argv[])
 {
 	int i;
