@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
+#include <string.h>
 
 /**
  * main - Run the code!
@@ -16,11 +16,8 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (*argv[i] >= '0' && *argv[i] <= '9' && isdigit(*argv[i]) == 1)
-		{
+		if (strspn(argv[i], "1234567890") == strlen(argv[i]))
 			sum += atoi(argv[i]);
-			printf("%c\n", *argv[i]);
-		}
 		else {
 			printf("Error\n");
 			return (0);
