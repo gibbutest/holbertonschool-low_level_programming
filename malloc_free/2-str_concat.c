@@ -1,7 +1,15 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
 
+/**
+ * str_concat - Combines two string
+ *
+ * Description: Combines two string and returns value.
+ * @s1: The first string
+ * @s2: The second string
+ *
+ * Return: The combined string
+ */
 char *str_concat(char *s1, char *s2)
 {
 	int i;
