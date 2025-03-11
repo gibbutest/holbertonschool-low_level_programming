@@ -17,7 +17,8 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	for (; str[size] != '\0'; size++);
+	for (; str[size] != '\0'; size++)
+	; /* This style guide is something else... */
 
 	tmp = malloc((size + 1) * sizeof(char));
 	if (tmp == NULL)
