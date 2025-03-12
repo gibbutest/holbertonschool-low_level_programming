@@ -41,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		combined[pos] = s2[i];
 		pos++;
 	}
-	combined[sum] = '\0';
+	combined[sum + 1] = '\0';
 
 	return (combined);
 }
