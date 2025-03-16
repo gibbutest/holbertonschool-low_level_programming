@@ -1,6 +1,13 @@
 #include <stdlib.h>
 #include "main.h"
 
+/**
+ * _calloc - Assign memory with zeros.
+ * @nmemb: The number of elements in the array.
+ * @size: The number in bytes of each element.
+ *
+ * Return: pointer to new memory.
+ */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *tmp;
