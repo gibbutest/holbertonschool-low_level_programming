@@ -18,6 +18,10 @@ int _strlen(const char *name)
 	return (i);
 }
 
+/**
+ * print_all - Print all but.. not all?
+ * @format: The string to format.
+ */
 void print_all(const char * const format, ...)
 {
 	int a = 0;
