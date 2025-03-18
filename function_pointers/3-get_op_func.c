@@ -2,6 +2,12 @@
 #include <stdio.h>
 #include "3-calc.h"
 
+/**
+ * get_op_func - Get the right operator.
+ * @s: The string operator to match.
+ *
+ * Return: Pointer to the operator.
+ */
 int (*get_op_func(char *s))(int, int)
 {
 	int i;

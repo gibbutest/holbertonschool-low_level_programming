@@ -3,6 +3,13 @@
 #include <string.h>
 #include "3-calc.h"
 
+/**
+ * main - Main function
+ * @argc: The arg count
+ * @argv: The arg array
+ *
+ * Return: 0;
+ */
 int main(int argc, char *argv[])
 {
 	int a;
