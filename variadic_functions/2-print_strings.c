@@ -1,6 +1,11 @@
 #include <stdarg.h>
 #include <stdio.h>
 
+/**
+ * print_strings - Print the strings Kronk!
+ * @separator: The character(s) between each string
+ * @n: The number of args
+ */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
