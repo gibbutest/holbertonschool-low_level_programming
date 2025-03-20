@@ -19,7 +19,7 @@ void print_all(const char * const format, ...)
 	{
 		if (
 			format[i] == 's' || format[i] == 'i' ||
-			format[i] == 'c' || foramt[i] == 'f')
+			format[i] == 'c' || format[i] == 'f')
 		{
 			printf("%s", separator);
 			switch(format[i])
