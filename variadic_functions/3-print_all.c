@@ -1,4 +1,3 @@
-#include <stdarg.h>
 #include <stdio.h>
 #include "variadic_functions.h"
 
@@ -12,7 +11,7 @@ void print_all(const char * const format, ...)
 	char *separator = "";
 	char *string = "";
 	va_list args;
-	
+
 	va_start(args, format);
 
 	while (format && format[i])
@@ -22,7 +21,7 @@ void print_all(const char * const format, ...)
 			format[i] == 'c' || format[i] == 'f')
 		{
 			printf("%s", separator);
-			switch(format[i])
+			switch (format[i])
 			{
 				case 's':
 					string = va_arg(args, char *);
