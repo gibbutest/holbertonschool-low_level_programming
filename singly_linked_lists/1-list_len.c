@@ -5,7 +5,7 @@
  * @h: The head/entry pointer
  *
  * Return: The number of nodes
- */ 
+ */
 size_t list_len(const list_t *h)
 {
 	const list_t *head = h;
