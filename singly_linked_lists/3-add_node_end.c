@@ -19,7 +19,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 	
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 		i++;
 
 	new->str = strdup(str);
