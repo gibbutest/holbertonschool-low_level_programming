@@ -1,7 +1,9 @@
 #include "lists.h"
 
 /*
- * add_dnodeint - Add new node to the end
+ * add_dnodeint - Function stuffs
+ *
+ * Description: Adds a new node to the end
  * @head: The head/entry pointer
  * @n: The number to add
  *
