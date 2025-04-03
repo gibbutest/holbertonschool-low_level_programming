@@ -1,6 +1,6 @@
 #include "lists.h"
 
-/*
+/**
  * add_dnodeint - Function stuffs
  *
  * Description: Adds a new node to the start
