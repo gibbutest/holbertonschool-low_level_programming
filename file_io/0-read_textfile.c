@@ -37,11 +37,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	readVal = read(file, buffer, letters);
 	if (readVal == -1)
-		return end(file, buffer);
+		return (end(file, buffer));
 
 	writeVal = write(STDOUT_FILENO, buffer, readVal);
 	if (writeVal == -1 || writeVal != readVal)
-		return end(file, buffer);
+		return (end(file, buffer));
 
 	end(file, buffer);
 
