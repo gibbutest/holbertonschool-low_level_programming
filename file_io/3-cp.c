@@ -1,17 +1,29 @@
 #include "main.h"
 
+/**
+ * cannot_read - Exits the process if a file could not be read.
+ * @filename: The file that could not be copied
+ */
 void cannot_read(char *filename)
 {
 	dprintf(STDERR_FILENO, "Error: Cannot read from file %s\n", filename);
 	exit(98);
 }
 
+/**
+ * cannot_write - Exits the process if a file could not be written.
+ * @filename: The file that cannot be written to.
+ */
 void cannot_write(char *filename)
 {
 	dprintf(STDERR_FILENO, "Error: Cannot write to %s\n", filename);
 	exit(99);
 }
 
+/**
+ * close_file - Closes the file so it can no longer be accessed.
+ * @file: The file to close
+ */
 void close_file(int file)
 {
 	if (close(file))
@@ -21,6 +33,13 @@ void close_file(int file)
 	}
 }
 
+/**
+ * main - A copy file function
+ * @argc: The argument count
+ * @argv: The arguments to use
+ *
+ * Return: 0
+ */
 int main(int argc, char *argv[])
 {
 	int target_file;
