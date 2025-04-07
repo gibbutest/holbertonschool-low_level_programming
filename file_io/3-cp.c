@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
 		if (read_val == -1)
 			cannot_read(argv[1]);
 	}
-	
+
 	close_file(file_from);
 	close_file(file_to);
 
