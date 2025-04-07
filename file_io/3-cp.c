@@ -42,43 +42,43 @@ void close_file(int file)
  */
 int main(int argc, char *argv[])
 {
-	int target_file;
-	int new_file;
+	int file_from;
+	int file_to;
 	int write_val;
 	int read_val;
 	char *buffer[1024];
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp target_file new file\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from new file\n");
 		exit(97);
 	}
 
-	target_file = open(argv[1], O_RDONLY);
-	if (target_file == -1)
+	file_from = open(argv[1], O_RDONLY);
+	if (file_from == -1)
 		cannot_read(argv[1]);
 
-	read_val = read(target_file, buffer, 1024);
+	read_val = read(file_from, buffer, 1024);
 	if (read_val == -1)
 		cannot_read(argv[1]);
 
-	new_file = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
-	if (new_file == -1)
+	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	if (file_to == -1)
 		cannot_write(argv[2]);
 
 	while (read_val > 0)
 	{
-		write_val = write(new_file, buffer, read_val);
+		write_val = write(file_to, buffer, read_val);
 		if (write_val == -1)
 			cannot_write(argv[2]);
 
-		read_val = read(target_file, buffer, 1024);
+		read_val = read(file_from, buffer, 1024);
 		if (read_val == -1)
 			cannot_read(argv[1]);
 	}
 	
-	close_file(target_file);
-	close_file(new_file);
+	close_file(file_from);
+	close_file(file_to);
 
 	return (0);
 }
