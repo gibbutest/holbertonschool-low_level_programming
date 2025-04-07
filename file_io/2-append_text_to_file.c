@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * create_file - Creates a file with text
+ * append_text_to_file - Appends new text to the end of a file
  * @filename: The name of the file
- * @text_content: The text add to the file
+ * @text_content: The to append
  *
  * Return: Success or error code.
  */
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int file;
 	int writeVal;
